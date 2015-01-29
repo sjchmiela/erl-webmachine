@@ -1,0 +1,11 @@
+{application,mydemo,
+             [{description,"mydemo"},
+              {vsn,"1"},
+              {modules,[addressBook,mydemo,mydemo_ab_add_email,
+                        mydemo_ab_find_by_email,mydemo_ab_list,mydemo_ab_show,
+                        mydemo_app,mydemo_config,mydemo_resource,mydemo_sup,
+                        rAddressBookOtp,rAddressBookOtpSup]},
+              {registered,[]},
+              {applications,[kernel,stdlib,inets,crypto,mochiweb,webmachine]},
+              {mod,{mydemo_app,[]}},
+              {env,[{web_ip,"0.0.0.0"},{web_port,8080}]}]}.
